@@ -1,0 +1,17 @@
+.center(){
+    width: 100%;
+    margin: 0 auto;
+}
+.flex-box(flex, @direct, @justify, @align){
+    display: flex;
+    flex-direction: @direct;
+    justify-content: @justify;
+    align-items: @align;
+}
+.btn-style(@length, @btn-bg-color){
+    width: @length;
+    background: @btn-bg-color;
+    &:hover {
+        background: lighten(@btn-bg-color, 10%);
+    }
+}
