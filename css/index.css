@@ -134,29 +134,32 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: 'Lato', sans-serif;
+  color: #170312;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: 'Berkshire Swash', cursive;
+  color: #170312;
+}
+h1 {
+  font-size: 6rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4.5rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 p {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 2.8rem;
+  line-height: 1.5;
 }
 .container {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -165,24 +168,44 @@ p {
     width: 490px;
   }
 }
-.header-sect {
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #C0BCB5;
+  width: 100vw;
+  background: #170312;
+}
+.nav-bar-container .logo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+.nav-bar-container .nav-bar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5%;
+  width: 60%;
 }
 @media (max-width:500px) {
-  .header-sect {
+  .nav-bar-container .nav-bar {
     width: 500px;
   }
 }
-.header-sect h1 {
-  font-size: 4rem;
+.nav-bar-container .nav-bar h1 {
   padding-bottom: 20px;
+  color: #f3458e;
 }
-.header-sect a {
-  font-size: 1.5rem;
+.nav-bar-container .nav-bar a {
+  font-size: 2.5rem;
   padding: 15px;
   text-decoration: none;
-  color: black;
+  color: #FFFFFF;
+}
+.nav-bar-container .nav-bar a:hover {
+  color: #f3458e;
+  text-decoration: underline;
 }

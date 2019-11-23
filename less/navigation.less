@@ -1,24 +1,41 @@
 // Navigation code here
-.header-sect {
+
+.nav-bar-container {
+    .flex-box(flex, row, center, center);
+    border: 2px solid @gray;
+    width: 100vw;
+    background: @black;    
+
+    .logo {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+  .nav-bar {
+      .flex-box(flex, column, center, center);  
+      padding: 5%;
+      width: 60%;
     
-    .flex-box(flex, column, center, center);  
-    
-      
-    
-    @media @phone{
+        @media @phone{
         width: 500px;
-        // border: 1px solid orange;
-    }
+        }
   
-    h1 {
-        font-size: 4rem;
+        h1 {
         padding-bottom: 20px;
-    }
+        color: @dark-pink;
+        }
     
-    a {
-        font-size: 1.5rem;
+        a {
+        font-size: 2.5rem;
         padding: 15px;
         text-decoration: none;
-        color: black;
+        color:@white;
+
+        &:hover{
+            color: @dark-pink;
+            text-decoration: underline;
+        }
     }
-} //closes header-sect//
+}  //closes nav-bar
+} //closes nav-bar-container//
