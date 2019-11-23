@@ -176,6 +176,7 @@ p {
   border: 2px solid #C0BCB5;
   width: 100vw;
   background: #170312;
+  margin: 1% 0 1% 0;
 }
 .nav-bar-container .logo {
   width: 200px;
@@ -208,4 +209,37 @@ p {
 .nav-bar-container .nav-bar a:hover {
   color: #f3458e;
   text-decoration: underline;
+}
+header {
+  background: #791e9a;
+  background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
+  background: url(https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-size: cover;
+  object-fit: contain;
+  height: 50vh;
+  color: #170312;
+  margin: 0 3% 5% 3%;
+}
+header .title {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  text-align: center;
+  color: #170312;
+}
+header .cap-rt {
+  float: right;
+}
+header span {
+  font-weight: 600;
+  font-size: 3rem;
+}
+header h2 {
+  padding: 2%;
+  margin-bottom: 4%;
+}
+header p {
+  line-height: 1.5;
 }
