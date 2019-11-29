@@ -230,7 +230,7 @@ button:hover {
 .hm-header {
   background: #791e9a;
   background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
-  background: url(https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background: url(/resources/bg-images/balloons-adi-goldstein-unsplash.jpg);
   background-size: cover;
   object-fit: contain;
   height: 60vh;
@@ -344,7 +344,7 @@ h2 {
 .gallery-header {
   background: #791e9a;
   background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
-  background: url(/resources/confetti-jason-leung-unsplash.jpg);
+  background: url(/resources/bg-images/confetti-jason-leung-unsplash.jpg);
   background-size: cover;
   object-fit: contain;
   height: 60vh;
@@ -366,5 +366,21 @@ h2 {
 }
 .gallery-header .gallery-h2 {
   padding: 2%;
-  margin-bottom: 4%;
+  margin-bottom: 15%;
+}
+.image-gallery-section {
+  margin: 5% 2%;
+}
+.image-gallery-section .image-cards {
+  overflow: hidden;
+  margin: 2%;
+}
+.image-gallery-section .image-cards img {
+  object-fit: fill;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10%;
+  margin: 2% 0;
 }
