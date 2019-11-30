@@ -22,7 +22,7 @@
 
         @media @tablet{
             margin-top: 15%;
-            
+
         }
      
     }
@@ -38,6 +38,22 @@
         font-weight: bold;
         text-shadow: 2px 2px @white;
         font-size: 3rem;
+    }   
+    .btn {
+        font-size: 1.5rem;
+        margin-top: 60%;
+    }
+    .dropdown-menu{
+        background: @black;
+        .dropdown-item {
+            color: @white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            
+            &:hover{
+                color: @dark-pink;
+            }
+        }
     }
 }
 
@@ -75,5 +91,18 @@
                 
             }
         }
+    }
+}
+
+.top {
+    float: right;
+    margin-right: 15%;
+    font-size: 1.5rem;
+    color: @black;
+    
+
+    &:hover{
+    text-decoration: underline;
+    color: @dark-pink;
     }
 }
