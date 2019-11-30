@@ -309,7 +309,7 @@ button:hover {
 @media (max-width:600px) {
   .hm-header .title {
     margin-top: 65%;
-    top: 75%;
+    top: 85%;
   }
 }
 .hm-header .hm-title {
