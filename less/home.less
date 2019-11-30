@@ -1,8 +1,13 @@
 // Home Content
 
 section .home-cakes {
-  .flex-box(flex, rox, space-between, center);
+  .flex-box(flex, row, space-between, center);
   flex-wrap: wrap;
+
+  @media @tablet{
+    flex-direction: column;
+    justify-content: center;
+  }
   
   
   .cakes {
@@ -22,6 +27,10 @@ section .home-cakes {
     &:hover {
       transform: scale(1.5);
       transition-timing-function: ease;
+    }
+
+    @media @tablet {
+      width: 80%;
     }
   }
   img {
@@ -95,6 +104,12 @@ h2 {
 .service-offer-container{
   display: flex;
 
+  @media @tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 .service {
   background-image: url(/resources/bg-images/glitter-sharon-mccutcheon-unsplash.jpg);
   background-size: cover;
@@ -108,6 +123,10 @@ h2 {
   border-radius: 5%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
   opacity: 0.8;
+
+  @media @tablet {
+    width: 80%;
+  }
 
   .service-heading{
     font-size: 3rem;
@@ -131,6 +150,13 @@ h2 {
   border-radius: 2%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
   height: 325px;
+
+  @media @tablet {
+    width: 100vw;
+    height: 450px;
+    padding: 2%;
+    margin-bottom: 1%;
+  }
 
   .offer-heading {
     text-align: center;

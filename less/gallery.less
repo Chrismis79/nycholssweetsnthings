@@ -18,7 +18,16 @@
         transform: translate(-50%, -50%);
         text-align: center;
         color: @black;
-        
+
+
+        @media @tablet{
+            margin-top: 15%;
+        }
+
+        @media @phone {
+            top: 80%;
+            margin-top: 10%;
+        }        
     }
 
     .gallery-h2{
@@ -41,6 +50,11 @@
     .image-cards{
         overflow: hidden;
         margin: 2%;
+
+        @media @tablet {
+            margin: 0 auto;
+            width: 60%;
+        }
 
         img{
             object-fit: fill;
