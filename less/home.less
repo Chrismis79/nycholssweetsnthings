@@ -100,17 +100,20 @@ h2 {
   background-size: cover;
   object-fit: fill;
   background-position: center;
-  width: 50%;
+  width: 60%;
   margin: 2.5%;
   padding: 2%;
   margin-left: 0;
   margin-top: 5%;
+  border-radius: 5%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
   opacity: 0.8;
 
   .service-heading{
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-shadow: 2px 2px @purple;
+    padding-bottom: 3%;
+    margin-bottom: 1%;
   }
 
   p{
@@ -119,6 +122,46 @@ h2 {
     text-shadow: 2px 2px @white;
     letter-spacing: 1px;
     padding: 1%;
+  }
+}
+
+.offer {
+  background-color: #E385C9;
+  margin-top: 8%;
+  border-radius: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+  height: 325px;
+
+  .offer-heading {
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    font-size: 3.5rem;
+  }
+  .offer-text {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px @white;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    li{
+      width: 40%;
+      font-size: 2.3rem;
+      text-shadow: 1px 1px @white;
+      padding: 1%;
+      letter-spacing: 0;
+      margin-left: 1%;
+    }
+    .right{
+      margin-left: 15%;
+    }
+    
   }
 }
 }
