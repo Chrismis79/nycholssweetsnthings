@@ -12,6 +12,7 @@ section .home-cakes {
     border: 2px solid @purple;
     background: @black;
     color: @dark-pink;
+    text-shadow: 1px 1px @purple;
     border-radius: 10px;
     box-shadow: @gray;
     transition: transform .2s;
@@ -19,7 +20,8 @@ section .home-cakes {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
     
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.5);
+      transition-timing-function: ease;
     }
   }
   img {
@@ -78,6 +80,7 @@ h2 {
     padding: 2%;
     margin-bottom: 5%;
     line-height: 1.5;
+    text-shadow: 1px 1px @purple;
   }
   h3 {
     margin-bottom: 1%;
@@ -87,4 +90,35 @@ h2 {
   text-align: center;
   margin-top: 10%;
   font-size: 3rem;
+}
+
+.service-offer-container{
+  display: flex;
+
+.service {
+  background-image: url(/resources/bg-images/glitter-sharon-mccutcheon-unsplash.jpg);
+  background-size: cover;
+  object-fit: fill;
+  background-position: center;
+  width: 50%;
+  margin: 2.5%;
+  padding: 2%;
+  margin-left: 0;
+  margin-top: 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+
+  .service-heading{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px @purple;
+  }
+
+  p{
+    font-weight: 900;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px @white;
+    letter-spacing: 1px;
+    padding: 1%;
+  }
+}
 }

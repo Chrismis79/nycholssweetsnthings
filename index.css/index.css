@@ -131,13 +131,11 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: #c5f3e7;
 }
 html,
 body {
   font-family: 'Lato', sans-serif;
   color: #170312;
-  background-color: #c5f3e7;
 }
 h1,
 h2,
@@ -146,7 +144,6 @@ h4,
 h5 {
   font-family: 'Berkshire Swash', cursive;
   color: #170312;
-  text-shadow: 2px 2px #791e9a;
 }
 h1 {
   font-size: 6rem;
@@ -196,6 +193,7 @@ button:hover {
   border: 2px solid #C0BCB5;
   width: 100vw;
   background: #170312;
+  margin-top: 1%;
 }
 .nav-bar-container .logo {
   width: 200px;
@@ -218,7 +216,6 @@ button:hover {
 .nav-bar-container .nav-bar h1 {
   padding-bottom: 20px;
   color: #f3458e;
-  text-shadow: 2px 2px #791e9a;
 }
 .nav-bar-container .nav-bar a {
   font-size: 2.5rem;
@@ -233,29 +230,23 @@ button:hover {
 .hm-header {
   background: #791e9a;
   background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
-  background: url(/resources/bg-images/chuttersnap-spoon-unsplash.jpg);
+  background: url(/resources/bg-images/charisse-kenion-chocolate-unsplash.jpg);
   background-size: cover;
-  background-position: center;
-  object-fit: fill;
+  object-fit: contain;
   height: 60vh;
+  color: #170312;
   margin-bottom: 5%;
   width: 100vw;
   border: 2px solid #170312;
-  opacity: 0.9;
 }
 .hm-header .title {
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  font-weight: 900;
+  color: #FFFFFF;
   text-align: center;
-  margin-top: 5%;
-}
-.hm-header .hm-title {
-  color: black;
-  font-weight: 900;
+  color: #170312;
 }
 .hm-header .cap-rt {
   float: right;
@@ -267,22 +258,10 @@ button:hover {
 .hm-header h2 {
   padding: 2%;
   margin-bottom: 4%;
-  text-shadow: 2px 2px #ffffff;
 }
-.hm-header .hm-heading-text {
+.hm-header p {
   line-height: 1.5;
-  font-size: 3.5rem;
-  font-weight: 900;
-  letter-spacing: 0.1;
-  text-shadow: 2px 2px #ffffff;
-}
-footer {
-  background-color: #b6b2b2;
-  text-align: center;
-  font-size: 0.5rem;
-}
-footer .copyright {
-  font-size: 1.5rem;
+  font-size: 2.8;
 }
 section .home-cakes {
   display: flex;
@@ -298,7 +277,6 @@ section .home-cakes .cakes {
   border: 2px solid #791e9a;
   background: #170312;
   color: #f3458e;
-  text-shadow: 1px 1px #791e9a;
   border-radius: 10px;
   box-shadow: #C0BCB5;
   transition: transform 0.2s;
@@ -306,8 +284,7 @@ section .home-cakes .cakes {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
 }
 section .home-cakes .cakes:hover {
-  transform: scale(1.5);
-  transition-timing-function: ease;
+  transform: scale(1.1);
 }
 section .home-cakes img {
   width: 90%;
@@ -355,7 +332,6 @@ h2 {
   padding: 2%;
   margin-bottom: 5%;
   line-height: 1.5;
-  text-shadow: 1px 1px #791e9a;
 }
 .container h3 {
   margin-bottom: 1%;
@@ -365,40 +341,12 @@ h2 {
   margin-top: 10%;
   font-size: 3rem;
 }
-.service-offer-container {
-  display: flex;
-}
-.service-offer-container .service {
-  background-image: url(/resources/bg-images/glitter-sharon-mccutcheon-unsplash.jpg);
-  background-size: cover;
-  object-fit: fill;
-  background-position: center;
-  width: 50%;
-  margin: 2.5%;
-  padding: 2%;
-  margin-left: 0;
-  margin-top: 5%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
-  opacity: 0.8;
-}
-.service-offer-container .service .service-heading {
-  font-size: 3.5rem;
-  text-shadow: 2px 2px #791e9a;
-}
-.service-offer-container .service p {
-  font-weight: 900;
-  font-size: 2.8rem;
-  text-shadow: 2px 2px #FFFFFF;
-  letter-spacing: 1px;
-  padding: 1%;
-}
 .gallery-header {
   background: #791e9a;
   background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
-  background: url(/resources/speciality-cakes/FB-field-cake.JPG);
+  background: url(/resources/bg-images/confetti-jason-leung-unsplash.jpg);
   background-size: cover;
-  background-position: center;
-  object-fit: fill;
+  object-fit: contain;
   height: 60vh;
   color: #170312;
   margin-bottom: 5%;
@@ -413,17 +361,12 @@ h2 {
   text-align: center;
   color: #170312;
 }
+.gallery-header .gallery-cap-rt {
+  float: right;
+}
 .gallery-header .gallery-h2 {
   padding: 2%;
   margin-bottom: 15%;
-  text-shadow: 2px 2px #FFFFFF;
-  font-weight: 900;
-  font-size: 4rem;
-}
-.gallery-header .gallery-heading-text {
-  font-weight: bold;
-  text-shadow: 2px 2px #FFFFFF;
-  font-size: 3rem;
 }
 .image-gallery-section {
   margin: 5% 2%;

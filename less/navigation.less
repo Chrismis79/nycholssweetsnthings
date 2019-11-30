@@ -5,7 +5,7 @@
     border: 2px solid @gray;
     width: 100vw;
     background: @black; 
-    margin-top: 1%;   
+      
 
     .logo {
         width: 200px;
@@ -25,6 +25,7 @@
         h1 {
         padding-bottom: 20px;
         color: @dark-pink;
+        text-shadow: 2px 2px @purple;
         }
     
         a {
@@ -46,25 +47,31 @@
 .hm-header {
     background: rgb(121,30,154);
     background: linear-gradient(90deg, rgba(121,30,154,1) 0%, rgba(113,253,216,1) 47%, rgba(243,69,142,1) 100%);
-    background: url(/resources/bg-images/balloons-adi-goldstein-unsplash.jpg);
+    background: url(/resources/bg-images/chuttersnap-spoon-unsplash.jpg);
     background-size: cover;
-    object-fit: contain;
+    background-position: center;
+    object-fit: fill;
     height: 60vh;
-    color: @black;
     margin-bottom: 5%;
     width: 100vw;
-    border: 2px solid @black;  
+    border: 2px solid @black; 
+    opacity: 0.9;
     
     .title {
         position: absolute;
         top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: @white;
+        color: black;
+        font-weight: 900;
         text-align: center;
-        color: @black;
-    
+        margin-top: 5%;
      }
+
+     .hm-title{
+        color: black;
+        font-weight: 900;
+    }
      .cap-rt {
          float: right;
      }
@@ -75,10 +82,14 @@
      h2 {
          padding: 2%;
          margin-bottom: 4%;
+         text-shadow: 2px 2px #ffffff;
      }
-     p {
+     .hm-heading-text {
          line-height: 1.5;
-         font-size: 2.8;
+         font-size: 3.5rem;
+         font-weight: 900;
+         letter-spacing: 0.1;
+         text-shadow: 2px 2px #ffffff;
      }
 }
 
