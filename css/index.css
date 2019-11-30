@@ -547,6 +547,11 @@ h2 {
     margin-top: 15%;
   }
 }
+@media (max-width:600px) {
+  .gallery-header .gallery-title {
+    top: 83%;
+  }
+}
 .gallery-header .gallery-h2 {
   padding: 2%;
   margin-bottom: 15%;
@@ -599,16 +604,10 @@ h2 {
 }
 @media (max-width:800px) {
   .image-gallery-section .image-cards img {
-    width: 400px;
-    height: 400px;
-    margin: 2% auto;
-    padding-left: 0;
-  }
-}
-@media (max-width:600px) {
-  .image-gallery-section .image-cards img {
     width: 300px;
     height: 300px;
+    padding-right: 2%;
+    margin-right: 2%;
   }
 }
 .top {

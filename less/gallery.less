@@ -22,7 +22,9 @@
 
         @media @tablet{
             margin-top: 15%;
-
+        }
+        @media @phone {
+            top: 83%;
         }
      
     }
@@ -42,6 +44,7 @@
     .btn {
         font-size: 1.5rem;
         margin-top: 60%;
+        
     }
     .dropdown-menu{
         background: @black;
@@ -49,7 +52,7 @@
             color: @white;
             font-size: 1.5rem;
             font-weight: bold;
-            
+
             &:hover{
                 color: @dark-pink;
             }
@@ -80,16 +83,13 @@
             margin: 2% 0;
 
             @media @tablet {
-                width: 400px;
-                height: 400px;
-                margin: 2% auto;
-                padding-left: 0;
-            }
-            @media @phone {
                 width: 300px;
                 height: 300px;
+                padding-right: 2%;
+                margin-right: 2%;
                 
             }
+        
         }
     }
 }
