@@ -580,15 +580,19 @@ h2 {
   color: #f3458e;
 }
 .image-gallery-section {
-  margin: 5% 2%;
+  margin: 0 auto;
+  width: 65%;
 }
 .image-gallery-section .image-cards {
-  overflow: hidden;
-  margin: 2%;
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width:800px) {
   .image-gallery-section .image-cards {
-    margin: 2% auto;
+    margin: 0 auto;
     width: 60%;
     overflow: visible;
   }
@@ -600,19 +604,19 @@ h2 {
   background: #fff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 10%;
-  margin: 2% 0;
+  margin: 4%;
+  padding: 2%;
 }
 @media (max-width:800px) {
   .image-gallery-section .image-cards img {
     width: 300px;
     height: 300px;
-    padding-right: 2%;
-    margin-right: 2%;
+    margin: 0 auto;
   }
 }
 .top {
   float: right;
-  margin-right: 15%;
+  margin: 2% 15%;
   font-size: 1.5rem;
   color: #170312;
 }
