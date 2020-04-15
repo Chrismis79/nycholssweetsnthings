@@ -371,7 +371,7 @@ section .home-cakes .cakes {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
 }
 section .home-cakes .cakes:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition-timing-function: ease;
 }
 @media (max-width:800px) {

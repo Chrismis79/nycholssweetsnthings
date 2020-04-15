@@ -39,3 +39,39 @@ $(document).ready(function() {
 });
 
 
+let sports = document.getElementById('sports');
+
+sports.addEventListener('click', function(){
+    location.href="gallery.html#special"
+});
+
+let birthday = document.getElementById('birthday');
+
+birthday.addEventListener('click', function(){
+    location.href="gallery.html#birthday-cakes"
+});
+
+let wedding = document.getElementById('wedding');
+
+wedding.addEventListener('click', function(){
+    location.href="gallery.html#special"
+});
+
+let specialty = document.getElementById('specialty');
+
+specialty.addEventListener('click', function(){
+    location.href="gallery.html#special"
+});
+
+let party = document.getElementById('party');
+
+party.addEventListener('click', function(){
+    location.href="gallery.html#party-cakes"
+});
+
+let shower = document.getElementById('shower');
+
+shower.addEventListener('click', function(){
+    location.href="gallery.html#shower-cakes"
+});
+
