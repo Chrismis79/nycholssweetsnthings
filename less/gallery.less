@@ -10,10 +10,12 @@
     margin-bottom: 5%;
     width: 100vw;
     border: 2px solid @black;
+    position: relative;
+   
 
     .gallery-title {
         position: absolute;
-        top: 65%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -41,24 +43,33 @@
         text-shadow: 2px 2px @white;
         font-size: 3rem;
     }   
+    
+ .btn-group{
+    position: absolute;
+    top: 90%;
+    left: 41%;
+
     .btn {
         font-size: 1.5rem;
-        margin-top: 60%;
-        
     }
+ }  
+
     .dropdown-menu{
         background: @black;
         .dropdown-item {
-            color: @white;
-            font-size: 1.5rem;
-            font-weight: bold;
-
-            &:hover{
+              color: @white;
+             font-size: 1.5rem;
+             font-weight: bold;
+    
+             &:hover{
                 color: @dark-pink;
-            }
-        }
+             }
+         }
+     }
+        
     }
-}
+   
+
 
 .image-gallery-section{
     margin: 0 auto;
@@ -101,7 +112,7 @@
 
 .top {
     float: right;
-    margin: 2% 15%;
+    margin: 2%;
     font-size: 1.5rem;
     color: @black;
     
