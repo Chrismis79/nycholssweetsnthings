@@ -21,13 +21,6 @@
         text-align: center;
         color: @black;
 
-
-        @media @tablet{
-            margin-top: 15%;
-        }
-        @media @phone {
-            top: 83%;
-        }
      
     }
 
@@ -46,11 +39,18 @@
     
  .btn-group{
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 41%;
+   
 
     .btn {
         font-size: 1.5rem;
+
+        @media @phone {
+            // left: 0;
+            right: 30%;
+        }
+      
     }
  }  
 
@@ -89,6 +89,7 @@
             overflow: visible;
         }
 
+
         img{
             object-fit: fill;
             width: 250px;
@@ -104,6 +105,9 @@
                 height: 300px;
                 margin: 0 auto;
                 
+            }
+            @media @phone {
+                margin-bottom: 5%;
             }
         
         }

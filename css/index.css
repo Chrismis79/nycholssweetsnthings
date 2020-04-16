@@ -543,16 +543,6 @@ h2 {
   text-align: center;
   color: #170312;
 }
-@media (max-width:800px) {
-  .gallery-header .gallery-title {
-    margin-top: 15%;
-  }
-}
-@media (max-width:600px) {
-  .gallery-header .gallery-title {
-    top: 83%;
-  }
-}
 .gallery-header .gallery-h2 {
   padding: 2%;
   margin-bottom: 15%;
@@ -567,11 +557,16 @@ h2 {
 }
 .gallery-header .btn-group {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 41%;
 }
 .gallery-header .btn-group .btn {
   font-size: 1.5rem;
+}
+@media (max-width:600px) {
+  .gallery-header .btn-group .btn {
+    right: 30%;
+  }
 }
 .gallery-header .dropdown-menu {
   background: #170312;
@@ -619,6 +614,11 @@ h2 {
     margin: 0 auto;
   }
 }
+@media (max-width:600px) {
+  .image-gallery-section .image-cards img {
+    margin-bottom: 5%;
+  }
+}
 .top {
   float: right;
   margin: 2%;
@@ -628,4 +628,62 @@ h2 {
 .top:hover {
   text-decoration: underline;
   color: #f3458e;
+}
+.container {
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+.container h1 {
+  font-size: 3rem;
+}
+.container .text-center {
+  padding: 1%;
+  margin: 2%;
+}
+.container .form {
+  border: 2px solid #170312;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  background: #C0BCB5;
+}
+.container .form .row {
+  margin: 0 auto;
+  width: 80%;
+}
+.container .form .row .input {
+  margin: 0 auto;
+}
+.container .form .row label {
+  font-size: 1.2rem;
+}
+.container .form .row span {
+  color: #f3458e;
+}
+.container .form .row input {
+  margin: 0 auto;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border: 2px solid #170312;
+  border-radius: 5%;
+}
+.container .form .textarea {
+  width: 50%;
+  margin: 2% auto;
+}
+.container .form .text-box {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid #170312;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.container .form p {
+  font-size: 1rem;
+  padding-bottom: 2%;
+}
+.container .form .button {
+  width: 35%;
+  margin: 0 auto;
+}
+.container .form .button .btn {
+  color: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
 }

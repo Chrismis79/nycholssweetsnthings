@@ -40,28 +40,38 @@
 
  
   <div class="container contact">
-    <h1>Contact Us:</h1>
+    <h1 class="text-center">Contact Us</h1>
     
     <section id="form">
-      <div class="container">
+      <div class="container form">
        <h3 class="text-center">Sign up for Mailing List</h3>
 
         <form action=" https://formspree.io/mvobykke" method="POST">
           <div class="row">
-            <div class="col-sm-12 col-md-5 col-lg-5">
+            <div class="col-sm-12 col-md-5 col-lg-5 input">
+              <label for='name' class="col-form-label">Name:<span class="required">*</span></label>
               <input type="name" placeholder="Name" name="name" class="form-group form-control form-control-lg" required>
             </div>
             
-            <div class="col-sm-12 col-md-5 col-lg-5">
+            <div class="col-sm-12 col-md-5 col-lg-5 input">
+              <label for='Email' class="required col-form-label">Email: <span>*</span></label>
               <input type="email" placeholder="E-mail" name="email" class="form-group form-control form-control-lg" required>
             </div>
-            
-            <div class="col-sm-12 col-md-2 col-lg-2">
-              <button type="submit" class="form-group btn btn-primary btn-lg">SIGN UP</button>
-            </div>
-            <p>We will NEVER share/sell your information!</p>
           </div>
+
+          <div class="form-group textarea">
+            <label for='message' class="col-form-label"></label>
+            <textarea class="text-box" placeholder='Message' name='message' ></textarea> 
+          </div>
+          <p class="disclaimer text-center">We will NEVER share/sell your information!</p>
+            
+          <div class="button">
+            <button type="submit" class="form-group btn btn-lg">SIGN UP</button>
+            
+          </div>
+            
         </form>
+       
       </div>
        </section>
       
