@@ -673,7 +673,12 @@ h2 {
   height: 200px;
   margin: 0 auto;
   border: 2px solid #170312;
+  border-radius: 1%;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.container .form textarea::placeholder {
+  font-size: 1.3rem;
+  padding: 1%;
 }
 .container .form p {
   font-size: 1rem;
