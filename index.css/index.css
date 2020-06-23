@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  color: #170312;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #170312;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2.8rem;
+  line-height: 1.5;
+}
+button {
+  width: 275px;
+  padding: 2%;
+  margin: 1%;
+  background: #f3458e;
+  background: linear-gradient(90deg, #f3458e 5%, #1bd6a5 50%, #791e9a 95%);
+  color: #FFFFFF;
+  text-shadow: #C0BCB5;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
+button:hover {
+  transform: scale(1.1);
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width:600px) {
+  .container {
+    max-width: 590px;
+  }
+}
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #C0BCB5;
+  width: 100vw;
+  background: #170312;
+  margin-top: 1%;
+}
+.nav-bar-container .logo {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+.nav-bar-container .nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  width: 60%;
+}
+@media (max-width:600px) {
+  .nav-bar-container .nav-bar {
+    width: 500px;
+  }
+}
+.nav-bar-container .nav-bar h1 {
+  padding-bottom: 20px;
+  color: #f3458e;
+}
+.nav-bar-container .nav-bar a {
+  font-size: 2.5rem;
+  padding: 15px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.nav-bar-container .nav-bar a:hover {
+  color: #f3458e;
+  text-decoration: underline;
+}
+.hm-header {
+  background: #791e9a;
+  background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
+  background: url(/resources/bg-images/charisse-kenion-chocolate-unsplash.jpg);
+  background-size: cover;
+  object-fit: contain;
+  height: 60vh;
+  color: #170312;
+  margin-bottom: 5%;
+  width: 100vw;
+  border: 2px solid #170312;
+}
+.hm-header .title {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  text-align: center;
+  color: #170312;
+}
+.hm-header .cap-rt {
+  float: right;
+}
+.hm-header span {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.hm-header h2 {
+  padding: 2%;
+  margin-bottom: 4%;
+}
+.hm-header p {
+  line-height: 1.5;
+  font-size: 2.8;
+}
+section .home-cakes {
+  display: flex;
+  flex-direction: rox;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section .home-cakes .cakes {
+  width: 33%;
+  padding: 2%;
+  text-align: center;
+  border: 2px solid #791e9a;
+  background: #170312;
+  color: #f3458e;
+  border-radius: 10px;
+  box-shadow: #C0BCB5;
+  transition: transform 0.2s;
+  margin: 2% 0 2% 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
+section .home-cakes .cakes:hover {
+  transform: scale(1.1);
+}
+section .home-cakes img {
+  width: 90%;
+  height: 300px;
+  border-radius: 10%;
+  padding: 1%;
+  margin: 2%;
+}
+*:before,
+*:after {
+  content: '';
+}
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+.shine {
+  height: 20px;
+  width: 60%;
+  background-image: radial-gradient(farthest-side at 50% -50%, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0));
+  position: relative;
+}
+.shine::before {
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.75) 50%, hsla(0, 0%, 0%, 0));
+}
+h2 {
+  text-align: center;
+}
+.container {
+  margin-top: 5%;
+}
+.container .intro {
+  background: #170312;
+  border: 5px solid #791e9a;
+  color: #f3458e;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}
+.container h3 {
+  margin-bottom: 1%;
+}
+.center {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 3rem;
+}
+.gallery-header {
+  background: #791e9a;
+  background: linear-gradient(90deg, #791e9a 0%, #71fdd8 47%, #f3458e 100%);
+  background: url(/resources/bg-images/confetti-jason-leung-unsplash.jpg);
+  background-size: cover;
+  object-fit: contain;
+  height: 60vh;
+  color: #170312;
+  margin-bottom: 5%;
+  width: 100vw;
+  border: 2px solid #170312;
+}
+.gallery-header .gallery-title {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #170312;
+}
+.gallery-header .gallery-cap-rt {
+  float: right;
+}
+.gallery-header .gallery-h2 {
+  padding: 2%;
+  margin-bottom: 15%;
+}
+.image-gallery-section {
+  margin: 5% 2%;
+}
+.image-gallery-section .image-cards {
+  overflow: hidden;
+  margin: 2%;
+}
+.image-gallery-section .image-cards img {
+  object-fit: fill;
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10%;
+  margin: 2% 0;
+}

@@ -1,0 +1,193 @@
+// Home Content
+
+section .home-cakes {
+  .flex-box(flex, row, space-between, center);
+  flex-wrap: wrap;
+
+  @media @tablet{
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .cakes {
+    width: 33%;
+    padding: 2%;
+    text-align: center;
+    border: 2px solid @purple;
+    background: @black;
+    color: @dark-pink;
+    text-shadow: 1px 1px @purple;
+    border-radius: 10px;
+    box-shadow: @gray;
+    transition: transform .2s;
+    margin: 2% 0 2% 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+    
+    &:hover {
+      transform: scale(1.1);
+      transition-timing-function: ease;
+    }
+
+    @media @tablet {
+      width: 80%;
+    }
+  }
+  img {
+    width: 90%;
+    height: 300px;
+    border-radius: 10%;
+    padding: 1%;
+    margin: 2%;
+   
+  }
+}
+
+*:before, *:after { content: ''; }
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.shine {
+  height: 20px;
+  width: 60%;
+  background-image: radial-gradient(
+    farthest-side at 50% -50%,
+    hsla(0, 0%, 0%, 0.5),
+    hsla(0, 0%, 0%, 0));
+  position: relative; 
+}
+
+.shine::before {
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.75) 50%,
+    hsla(0, 0%, 0%, 0));
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  margin-top: 5%;
+  .intro{
+    background: @black;
+    border: 5px solid @purple;
+    color: @dark-pink;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5%;
+    line-height: 1.5;
+    text-shadow: 1px 1px @purple;
+  }
+  h3 {
+    margin-bottom: 1%;
+  }
+}
+.center {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 3rem;
+}
+
+.service-offer-container{
+  display: flex;
+
+  @media @tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.service {
+  background-image: url(/resources/bg-images/glitter-sharon-mccutcheon-unsplash.jpg);
+  background-size: cover;
+  object-fit: fill;
+  background-position: center;
+  width: 80%;
+  margin: 2.5%;
+  padding: 2%;
+  margin-left: 0;
+  margin-top: 5%;
+  border-radius: 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+
+  @media @tablet {
+    width: 80%;
+  }
+
+  .service-heading{
+    font-size: 3rem;
+    text-shadow: 2px 2px @purple;
+    padding-bottom: 3%;
+    margin-bottom: 1%;
+  }
+
+  p{
+    font-weight: 900;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px @white;
+    letter-spacing: 1px;
+    padding: 1%;
+  }
+}
+
+.offer {
+  background-color: #E385C9;
+  margin-top: 8%;
+  border-radius: 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), 0px 4px 20px rgba(0, 0, 0, 0.7);
+  height: 325px;
+
+  @media @tablet {
+    width: 100vw;
+    height: 450px;
+    padding: 2%;
+    margin-bottom: 1%;
+  }
+
+  .offer-heading {
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    font-size: 3.5rem;
+  }
+  .offer-text {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px @white;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    li{
+      width: 40%;
+      font-size: 2.3rem;
+      text-shadow: 1px 1px @white;
+      padding: 1%;
+      letter-spacing: 0;
+      margin-left: 1%;
+    }
+    .right{
+      margin-left: 15%;
+    }
+    
+  }
+}
+}

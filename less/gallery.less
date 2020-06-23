@@ -1,0 +1,127 @@
+.gallery-header {
+    background: rgb(121,30,154);
+    background: linear-gradient(90deg, rgba(121,30,154,1) 0%, rgba(113,253,216,1) 47%, rgba(243,69,142,1) 100%);
+    background: url(/resources/speciality-cakes/FB-field-cake.JPG);
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+    height: 60vh;
+    color: @black;
+    margin-bottom: 5%;
+    width: 100vw;
+    border: 2px solid @black;
+    position: relative;
+   
+
+    .gallery-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: @black;
+
+     
+    }
+
+    .gallery-h2{
+        padding: 2%;
+        margin-bottom: 15%;
+        text-shadow: 2px 2px @white;
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    .gallery-heading-text{
+        font-weight: bold;
+        text-shadow: 2px 2px @white;
+        font-size: 3rem;
+    }   
+    
+ .btn-group{
+    position: absolute;
+    top: 80%;
+    left: 41%;
+   
+
+    .btn {
+        font-size: 1.5rem;
+
+        @media @phone {
+            // left: 0;
+            right: 30%;
+        }
+      
+    }
+ }  
+
+    .dropdown-menu{
+        background: @black;
+        .dropdown-item {
+              color: @white;
+             font-size: 1.5rem;
+             font-weight: bold;
+    
+             &:hover{
+                color: @dark-pink;
+             }
+         }
+     }
+        
+    }
+   
+
+
+.image-gallery-section{
+    margin: 0 auto;
+    width: 65%;
+    
+
+    .image-cards{
+        margin: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;   
+
+        @media @tablet {
+            margin: 0 auto;
+            width: 60%;
+            overflow: visible;
+        }
+
+
+        img{
+            object-fit: fill;
+            width: 250px;
+            height: 250px;
+            background: #fff;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+            border-radius: 10%;
+            margin: 4%;
+            padding: 2%;
+
+            @media @tablet {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                
+            }
+            @media @phone {
+                margin-bottom: 5%;
+            }
+        
+        }
+    }
+}
+
+.top {
+    float: right;
+    margin: 2%;
+    font-size: 1.5rem;
+    color: @black;
+    
+    &:hover{
+    text-decoration: underline;
+    color: @dark-pink;
+    }
+}
